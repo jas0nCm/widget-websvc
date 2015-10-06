@@ -1,0 +1,6 @@
+# widget-websvc
+This is a Maven project that built with Spring Boot. It includes an embedded Tomcat applicaiton server. To build and deploy the project from the command line type 'mvn spring-boot:run'.
+
+The URL for the Web service's endpoint is http://localhost:8080/websvc/tier. The url accepts POST requests with application/json in the request body. Below is a sample JSON object that is valid in the application:
+
+{"frontCasing":{"majorDefect":{"defectSeverity":"MAJOR","defectType":"CRACKED_CASING"}},"rearCasing":{"majorDefect":null},"hinge":{"minorDefect":{"defectSeverity":"MINOR","defectType":"MISALIGNED_HINGE"},"majorDefect":{"defectSeverity":"MAJOR","defectType":"BENT_HINGE"},"massiveDefect":{"defectSeverity":"MASSIVE","defectType":"BROKEN_HINGE"}},"sprockets":[{"minorDefect":{"defectSeverity":"MINOR","defectType":"FADED_SPROCKET"},"majorDefect":{"defectSeverity":"MAJOR","defectType":"CRACKED_SPROCKET"},"massiveDefect":{"defectSeverity":"MASSIVE","defectType":"WARPED_SPROCKET"}},{"minorDefect":null,"majorDefect":{"defectSeverity":"MAJOR","defectType":"CRACKED_SPROCKET"},"massiveDefect":null},{"minorDefect":null,"majorDefect":null,"massiveDefect":null},{"minorDefect":null,"majorDefect":null,"massiveDefect":null},{"minorDefect":null,"majorDefect":null,"massiveDefect":null}]}
